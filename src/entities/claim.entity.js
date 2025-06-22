@@ -1,6 +1,9 @@
 const ticketEntity = require('./ticket.entity');
 const { GAME_TYPE } = require('../utils/constants');
 
+/**
+ * Represents a claim in Tambola, including the ticket, announced numbers, and game type.
+ */
 class Claim {
   constructor(ticket, announcedNumbers, gameType) {
     this.ticket = new ticketEntity(ticket);

@@ -1,5 +1,8 @@
 const config = require('config');
 
+/**
+ * Represents a Tambola ticket and provides utility methods to access ticket data.
+ */
 class Ticket {
   constructor(ticket) {
     const rowCount = config.get('ticket.rowCount');
@@ -17,10 +20,19 @@ class Ticket {
     this.ticket = ticket;
   }
 
+  /**
+   * Returns all non-null numbers in the specified row.
+   * @param {number} index - The row index.
+   * @returns {number[]} The numbers in the row.
+   */
   getRow(index) {
     return this.ticket[index].filter(n => n !== null);
   }
 
+  /**
+   * Returns all non-null numbers in the ticket.
+   * @returns {number[]} All numbers in the ticket.
+   */
   getAllNumbers() {
     return this.ticket.flat().filter(n => n !== null);
   }
