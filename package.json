@@ -1,0 +1,23 @@
+{
+  "name": "tambola",
+  "version": "1.0.0",
+  "description": "An app to Play Tambola",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "config": "^3.3.12"
+  },
+  "devDependencies": {
+    "jest": "^29.0.0"
+  },
+  "jest": {
+    "testMatch": [
+      "**/src/tests/**/*.test.js"
+    ]
+  }
+}

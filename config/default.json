@@ -1,0 +1,9 @@
+{
+  "ticket": {
+    "rowCount": 3,
+    "columnCount": 9
+  },
+  "inputFile": {
+    "path": "input/input.json"
+  }
+}

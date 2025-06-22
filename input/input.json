@@ -1,0 +1,215 @@
+[
+  {
+    "ticket": [
+      [null, null, 21, null, 42, 1, 55, 38, 24],
+      [null, null, 60, null, 57, null, null, null, 3],
+      [null, null, 84, null, 67, 62, 41, 40, 74]
+    ],
+    "gameClaimed": "TOP_LINE",
+    "announcedNumbers": [21, 42, 1, 55, 38, 24],
+    "expected": "ACCEPTED"
+  },
+  {
+    "ticket": [
+      [null, null, 34, null, 67, null, 7, 49, 11],
+      [68, null, null, 1, null, 10, null, 19, null],
+      [88, 30, null, 25, null, 37, null, 4, 43]
+    ],
+    "gameClaimed": "TOP_LINE",
+    "announcedNumbers": [34, 67, 7, 49],
+    "expected": "REJECTED"
+  },
+  {
+    "ticket": [
+      [25, null, 53, null, null, null, 26, 60, 45],
+      [null, null, null, 38, null, 65, null, 23, null],
+      [51, 15, 28, 20, null, null, 56, 47, 16]
+    ],
+    "gameClaimed": "MIDDLE_LINE",
+    "announcedNumbers": [38, 65, 23],
+    "expected": "ACCEPTED"
+  },
+  {
+    "ticket": [
+      [null, 57, 9, 48, null, 50, 53, null, null],
+      [31, 83, 77, null, null, 29, null, 44, 32],
+      [30, null, 67, 59, 26, null, null, null, null]
+    ],
+    "gameClaimed": "MIDDLE_LINE",
+    "announcedNumbers": [31, 83, 77, 29, 44],
+    "expected": "REJECTED"
+  },
+  {
+    "ticket": [
+      [34, null, 6, null, 63, null, 22, 25, 52],
+      [39, 60, null, 2, null, 55, null, 17, null],
+      [76, null, 68, null, null, 36, 4, null, null]
+    ],
+    "gameClaimed": "BOTTOM_LINE",
+    "announcedNumbers": [76, 68, 36, 4],
+    "expected": "ACCEPTED"
+  },
+  {
+    "ticket": [
+      [null, 66, null, 8, 34, 41, 52, null, 62],
+      [null, 18, null, null, null, 53, null, null, null],
+      [13, 61, null, 76, null, 42, 15, 24, 55]
+    ],
+    "gameClaimed": "BOTTOM_LINE",
+    "announcedNumbers": [13, 61, 76, 42, 15, 24],
+    "expected": "REJECTED"
+  },
+  {
+    "ticket": [
+      [41, 12, null, 38, null, null, 70, null, null],
+      [67, 27, 7, 13, 83, 87, null, 60, 90],
+      [null, null, null, 39, null, 9, null, 80, null]
+    ],
+    "gameClaimed": "FULL_HOUSE",
+    "announcedNumbers": [41, 12, 38, 70, 67, 27, 7, 13, 83, 87, 60, 90, 39, 9, 80],
+    "expected": "ACCEPTED"
+  },
+  {
+    "ticket": [
+      [null, 42, 36, null, 1, 15, 21, null, 74],
+      [null, 77, 59, 35, null, null, null, 85, null],
+      [null, null, 56, 70, 86, null, 89, null, 72]
+    ],
+    "gameClaimed": "FULL_HOUSE",
+    "announcedNumbers": [42, 36, 1, 15, 21, 74, 77, 59, 35, 85, 56, 70, 86, 89],
+    "expected": "REJECTED"
+  },
+  {
+    "ticket": [
+      [74, null, 59, null, null, null, null, null, null],
+      [75, null, 1, 3, null, 80, null, 46, 6],
+      [84, 16, null, 9, 67, 65, null, 56, 36]
+    ],
+    "gameClaimed": "EARLY_FIVE",
+    "announcedNumbers": [74, 59, 75, 1, 7, 3],
+    "expected": "ACCEPTED"
+  },
+  {
+    "ticket": [
+      [null, 19, null, 48, null, 25, 50, 41, null],
+      [40, 26, 1, null, null, null, null, 16, 86],
+      [68, null, 62, 8, null, 5, 9, null, null]
+    ],
+    "gameClaimed": "EARLY_FIVE",
+    "announcedNumbers": [19, 48, 25, 50, 9],
+    "expected": "REJECTED"
+  },
+  {
+    "ticket": [
+      [8, 12, null, null, 39, 44, 55, null, 67],
+      [null, null, null, 14, 18, 33, null, 51, 72],
+      [9, 24, 38, null, null, 45, 60, 74, 89]
+    ],
+    "gameClaimed": "TOP_LINE",
+    "announcedNumbers": [8, 12, 39, 44, 55, 67],
+    "expected": "ACCEPTED"
+  },
+  {
+    "ticket": [
+      [11, null, null, null, 36, 40, 47, 62, null],
+      [17, 29, null, 38, 50, null, 61, null, 78],
+      [null, null, 7, 16, 23, 31, 46, 59, 90]
+    ],
+    "gameClaimed": "MIDDLE_LINE",
+    "announcedNumbers": [17, 29, 38, 50, 61, 78],
+    "expected": "ACCEPTED"
+  },
+  {
+    "ticket": [
+      [3, 14, null, 26, 33, null, 42, 55, null],
+      [5, 19, 22, 31, null, 40, 58, 65, null],
+      [6, 18, 24, 30, 37, 43, 52, 66, 73]
+    ],
+    "gameClaimed": "BOTTOM_LINE",
+    "announcedNumbers": [6, 18, 24, 30, 37, 43, 52, 66, 73],
+    "expected": "ACCEPTED"
+  },
+  {
+    "ticket": [
+      [10, null, 21, 35, null, 41, 57, 60, null],
+      [12, 22, null, null, 43, null, 59, 68, 70],
+      [null, 20, 33, 44, null, 46, 65, 71, 88]
+    ],
+    "gameClaimed": "FULL_HOUSE",
+    "announcedNumbers": [
+      10, 21, 35, 41, 57, 60,
+      12, 22, 43, 59, 68, 70,
+      20, 33, 44, 46, 65, 71, 88
+    ],
+    "expected": "ACCEPTED"
+  },
+  {
+    "ticket": [
+      [null, 4, 15, 28, null, 34, 50, 69, null],
+      [7, 20, null, 36, 42, 54, null, null, 80],
+      [11, 19, 23, null, null, 47, 63, 72, 89]
+    ],
+    "gameClaimed": "EARLY_FIVE",
+    "announcedNumbers": [4, 15, 28, 50, 69],
+    "expected": "ACCEPTED"
+  },
+  {
+    "ticket": [
+      [1, 3, 5, 7, 9, null, null, null, null],
+      [11, 13, 15, 17, 19, 21, 23, 25, 27],
+      [29, 31, 33, 35, 37, 39, 41, 43, 45]
+    ],
+    "gameClaimed": "EARLY_FIVE",
+    "announcedNumbers": [1, 3, 5, 7, 9, 11],
+    "expected": "REJECTED"
+  },
+  {
+    "ticket": [
+      [2, null, 16, 25, null, 39, null, 53, 66],
+      [5, 13, null, null, 45, null, 50, 62, 77],
+      [8, null, 24, 28, 35, 48, null, 64, 81]
+    ],
+    "gameClaimed": "TOP_LINE",
+    "announcedNumbers": [2, 16, 25, 39, 53, 66, 70],
+    "expected": "ACCEPTED"
+  },
+  {
+    "ticket": [
+      [9, 12, 18, 20, 26, null, 49, null, 58],
+      [6, null, 17, null, null, 32, 41, 54, 69],
+      [null, 14, 19, 29, null, 37, null, 55, 60]
+    ],
+    "gameClaimed": "FULL_HOUSE",
+    "announcedNumbers": [
+      9, 12, 18, 20, 26, 49, 58,
+      6, 17, 32, 41, 54, 69,
+      14, 19, 29, 37, 55, 60
+    ],
+    "expected": "REJECTED"
+  },
+  {
+    "ticket": [
+      [10, 13, 27, 36, 40, null, 63, null, 79],
+      [1, 4, 11, 22, null, 35, 51, null, 68],
+      [5, 7, 18, 21, 38, 44, 59, 71, 83]
+    ],
+    "gameClaimed": "BOTTOM_LINE",
+    "announcedNumbers": [5, 7, 18, 21, 38, 44, 59, 71, 83],
+    "expected": "ACCEPTED"
+  },
+  {
+    "ticket": [
+      [30, 33, 36, null, 42, 45, null, 48, 50],
+      [60, 62, null, 65, 66, 69, 70, 72, 75],
+      [80, 81, 83, 84, 85, 87, 88, 89, 90]
+    ],
+    "gameClaimed": "FULL_HOUSE",
+    "announcedNumbers": [
+      30, 33, 36, 42, 45, 48, 50,
+      60, 62, 65, 66, 69, 70, 72, 75,
+      80, 81, 83, 84, 85, 87, 88, 89, 90
+    ],
+    "expected": "ACCEPTED"
+  }
+]
+
