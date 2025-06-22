@@ -4,24 +4,24 @@ A clean, modular, and extensible Tambola (Housie) game engine built with a focus
 
 ## Design Highlights
 
-### 1. Clean Code
+#### a. Clean Code
 - **Encapsulation:** Core entities (`Ticket`, `Claim`) and rules encapsulate state and expose behavior through clear interfaces.
 - **Readability:** Code is organized into logical modules with meaningful names and responsibilities.
 - **Testability:** Comprehensive unit tests ensure reliability and make future changes safe.
 
-### 2. SOLID Principles
+#### b. SOLID Principles
 - **Single Responsibility:** Each class and module has a single, well-defined responsibility.
 - **Open/Closed:** New game rules can be added by extending the `BaseRule` class without modifying existing code.
 - **Liskov Substitution:** All rules inherit from `BaseRule` and can be used interchangeably.
 - **Interface Segregation:** Interfaces are simple and focused; classes expose only what is necessary.
 - **Dependency Inversion:** The `ClaimValidator` depends on abstractions (rules), not concrete implementations.
 
-### 3. KISS (Keep It Simple, Stupid)
+#### c. KISS (Keep It Simple, Stupid)
 - **Lightweight by design:** No REST, DB, or GUI overhead.
 - **Simple I/O model:** Tested via code, not complex input systems.
 - **Minimal dependencies:** Only essential libraries are used (e.g., for testing, config).
 
-## 1. Usage Example
+## Usage Example
 
 ```js
 const ClaimValidator = require('./src/services/claimValidator.service');
@@ -40,7 +40,7 @@ const validator = new ClaimValidator();
 console.log(validator.validate(claim)); // Output: ACCEPTED
 ```
 
-## 2. Supported Game Types
+## Supported Game Types
 
 | Game Type     | Description                        |
 |---------------|------------------------------------|
@@ -50,19 +50,8 @@ console.log(validator.validate(claim)); // Output: ACCEPTED
 | FULL_HOUSE    | All 15 numbers on ticket marked    |
 | EARLY_FIVE    | First 5 numbers on the ticket      |
 
-## 3. Ticket Structure
 
-Each ticket is a 3x9 grid (array of arrays). Numbers or `null` represent filled and empty cells.
-
-```js
-[
-  [4, null, 17, null, 42, null, null, 72, null],
-  [null, 11, null, 29, null, 55, 68, null, 90],
-  [5, null, 18, null, 44, null, 63, null, null]
-]
-```
-
-## Getting Started
+##  Getting Started
 
 1. **Install dependencies:**
    ```sh
@@ -90,6 +79,12 @@ To add a new rule:
 1. Create a new class in `src/rules/` extending `BaseRule`.
 2. Implement the `isValidClaim` method.
 3. Register the rule in `ClaimValidator`.
+
+## Assumptions
+
+- The EARLY_FIVE rule accepts a claim as soon as any five numbers on the ticket are marked, regardless of how many numbers have been announced. If more than five numbers are announced, but the fifth marked number completes the claim, it will still be accepted immediately.
+
+- Each ticket is a 3x9 grid (3 rows, 9 columns). This structure is configurable. 
 
 ---
 
