@@ -16,7 +16,8 @@ if(!inputs || !inputs.length) {
   process.exit(1);
 }
 
-for (const input of inputs) {
+for (let i = 0;i<inputs.length;i++) {
+  const input = inputs[i];
   const { ticket, gameClaimed, announcedNumbers } = TicketParser.fromJSON(input);
   
   const claim = new Claim(ticket, announcedNumbers, gameClaimed);
@@ -24,5 +25,5 @@ for (const input of inputs) {
   const claimValidator = new ClaimValidatorService();
   const result = claimValidator.validate(claim);
 
-  console.log(result);
+  console.log(`Test Case ${i + 1}: ${result}`);
 }

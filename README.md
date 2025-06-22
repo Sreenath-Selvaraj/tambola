@@ -19,7 +19,7 @@ A clean, modular, and extensible Tambola (Housie) game engine built with a focus
 ### 3. KISS (Keep It Simple, Stupid)
 - **Lightweight by design:** No REST, DB, or GUI overhead.
 - **Simple I/O model:** Tested via code, not complex input systems.
-- **Minimal dependencies:** Only essential libraries are used (e.g., for testing).
+- **Minimal dependencies:** Only essential libraries are used (e.g., for testing, config).
 
 ## 1. Usage Example
 
@@ -68,7 +68,11 @@ Each ticket is a 3x9 grid (array of arrays). Numbers or `null` represent filled 
    ```sh
    npm install
    ```
-2. **Run tests:**
+2. **Run Test Cases:**
+   ```sh
+   npm start
+   ```
+3. **Run tests:**
    ```sh
    npm test
    ```
@@ -86,11 +90,6 @@ To add a new rule:
 1. Create a new class in `src/rules/` extending `BaseRule`.
 2. Implement the `isValidClaim` method.
 3. Register the rule in `ClaimValidator`.
-
-## Principles in Action
-- **Behavior is separated from state** for all objects.
-- **SOLID and KISS** are followed throughout for maintainability and extensibility.
-- **No unnecessary complexity**—just clean, pragmatic code.
 
 ---
 
