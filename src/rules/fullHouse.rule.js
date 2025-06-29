@@ -1,5 +1,5 @@
 const BaseRule = require('./base.rule');
-const { areAllNumbersAnnounced, isLastNumberValid } = require('../utils');
+const { isAllAndLastNumberValid } = require('../utils');
 const config = require('config');
 class FullHouseRule extends BaseRule {
   constructor(gameType) {
@@ -12,8 +12,7 @@ class FullHouseRule extends BaseRule {
     if(!allNumbers || allNumbers.length < fullHouseCount) {
       return false; // No numbers on the ticket
     }
-    return areAllNumbersAnnounced(allNumbers, announcedNumbers) &&
-           isLastNumberValid(allNumbers, announcedNumbers);
+    return isAllAndLastNumberValid(allNumbers, announcedNumbers);
   }
 }
 

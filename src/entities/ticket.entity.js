@@ -18,6 +18,7 @@ class Ticket {
     }
 
     this.ticket = ticket;
+    this.diagonals = this.calculateDiagonals();
   }
 
   /**
@@ -36,6 +37,11 @@ class Ticket {
   getAllNumbers() {
     return this.ticket.flat().filter(n => n !== null);
   }
+
+  getAllDiagonals() {
+    return this.diagonals
+  }
+
 }
 
 module.exports = Ticket;

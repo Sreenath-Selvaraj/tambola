@@ -1,5 +1,5 @@
 const BaseRule = require('./base.rule');
-const { areAllNumbersAnnounced, isLastNumberValid } = require('../utils');
+const { isAllAndLastNumberValid } = require('../utils');
 const { LINE_INDEX } = require('../utils/constants');
 
 class TopLineRule extends BaseRule {
@@ -9,8 +9,7 @@ class TopLineRule extends BaseRule {
   
   isValidClaim(ticket, announcedNumbers) {
     const line = ticket.getRow(LINE_INDEX[this.gameType]);
-    return areAllNumbersAnnounced(line, announcedNumbers) &&
-           isLastNumberValid(line, announcedNumbers);
+    return isAllAndLastNumberValid(line, announcedNumbers);
   }
 }
 
